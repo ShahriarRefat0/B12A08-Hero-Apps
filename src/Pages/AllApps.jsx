@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppCard from "./AppCard";
 
 const AllApps = () => {
   const { apps, loading } = useApps();
+
+  const [search, setSearch ] = useState('')
+  const term = search.trim().toLowerCase();
+
+
+  const searchApp = term
+    ? apps.filter((app) => app.title.toLowerCase().includes(term))
+    : apps;
+
+
 
   
   return (
@@ -38,11 +48,17 @@ const AllApps = () => {
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" required placeholder="Search App" />
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              type="search"
+              required
+              placeholder="Search App"
+            />
           </label>
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-5 mb-20">
-          {apps.map((app) => (
+          {searchApp.map((app) => (
             <AppCard key={app.id} app={app}>
               {" "}
             </AppCard>

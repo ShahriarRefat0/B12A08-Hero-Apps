@@ -7,9 +7,11 @@ import { Link } from 'react-router';
 
 
 const AppCard = ({app}) => {
-  const { image, title, ratingAvg, downloads } = app;
+  const { image, title, ratingAvg, downloads, id } = app;
+
+  
   return (
-    <Link to="/appDetails">
+    <Link to={`/appDetails/${id}`}>
       <div>
         <div className="card bg-base-100 shadow-sm hover:scale-105 transition ease-in-out">
           <figure className="px-5 pt-5 overflow-hidden">
