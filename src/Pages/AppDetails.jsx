@@ -17,41 +17,51 @@ import {
 } from "recharts";
 import LoadSpinner from "../Components/LoadSpinner";
 import { useState } from "react";
+import { abbreviateNumber } from "js-abbreviation-number";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
-  const [installs, setInstalls] = useState([])
+  const [isInstalled, setIsInstalled] = useState(false)
   const params = useParams();
   const { apps, loading, error } = useApps();
+
   const app = apps.find((app) => app.id === Number(params.id));
   if (loading) {return <LoadSpinner></LoadSpinner>}
   
   const {
     image,
     title,
-    downloads,
+    downloads = abbreviateNumber(downloads),
     ratingAvg,
-    reviews,
+    reviews = abbreviateNumber(reviews),
     size,
     companyName,
     description,
-    ratings = [],
+    ratings,
+    id
+    
   } = app || {};
 
+  const formattedDownloads = abbreviateNumber(downloads);
+  const formattedReviews = abbreviateNumber(reviews);
 
+  
   const handleInstall = () => {
+    if (isInstalled) return;
     const isExist = JSON.parse(localStorage.getItem('installs'))
     let updateList = []
     if (isExist) {
       const allReadyInstalled = isExist.some((a) => a.id === app.id) 
       if (allReadyInstalled) {
-        return alert('no vai')
+        return 
       } 
       updateList = [...isExist, app];
     } else {
       updateList.push(app)
     }
      localStorage.setItem("installs", JSON.stringify(updateList));
-    
+    setIsInstalled(true);
+    toast.success(`${title} app installed successfully`)
   };
 
 
@@ -83,7 +93,7 @@ const AppDetails = () => {
                     Downloads
                   </p>
                   <h2 className="font-bold md:text-[40px] text-3xl">
-                    {downloads}
+                    {formattedDownloads}
                   </h2>
                 </div>
                 <div className="flex flex-col justify-start">
@@ -91,7 +101,7 @@ const AppDetails = () => {
                   <p className="text-gray-500 md:text-base text-sm">
                     Average Ratings
                   </p>
-                  <h2 className="font-bold text-[40px] md:text-[40px] text-3xl">
+                  <h2 className="font-bold md:text-[40px] text-3xl">
                     {ratingAvg}
                   </h2>
                 </div>
@@ -101,19 +111,25 @@ const AppDetails = () => {
                     Total Reviews
                   </p>
                   <h2 className="font-bold md:text-[40px] text-3xl ">
-                    {reviews}
+                    {formattedReviews}
                   </h2>
                 </div>
               </div>
-              <button onClick={handleInstall} className="btn btn-success text-white font-bold md:w-[240px] w-full">
-                Install Now ({size} MB)
+              <button
+                onClick={handleInstall}
+                className={` ${
+                  isInstalled ? "btn btn-secondary" : "btn btn-success"
+                } text-white font-bold md:w-[240px] w-full`}
+                disabled={isInstalled}
+              >
+                {isInstalled ? "Installed" : `Install Now ${size} MB` }
               </button>
             </div>
           </div>
           {/* //chart */}
           <div className=" border-t-1 border-gray-300 pt-10 px-3">
             <h3 className="text-2xl font-bold">Ratings</h3>
-  
+
             <ResponsiveContainer width="100%" height={400}>
               <ComposedChart
                 layout="vertical"
@@ -126,7 +142,6 @@ const AppDetails = () => {
                   bottom: 20,
                   left: 20,
                 }}
-                
               >
                 <CartesianGrid stroke="#f5f5f5" />
                 <XAxis axisLine={false} tickLine={false} type="number" />

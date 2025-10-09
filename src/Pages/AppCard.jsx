@@ -3,11 +3,13 @@ import React from 'react';
 import star from '../assets/icon-ratings.png';
 import download from "../assets/icon-downloads.png";
 import { Link } from 'react-router';
+import { abbreviateNumber } from 'js-abbreviation-number';
 
 
 
 const AppCard = ({app}) => {
   const { image, title, ratingAvg, downloads, id } = app;
+  const formattedDownloads = abbreviateNumber(downloads);
 
   
   return (
@@ -26,7 +28,7 @@ const AppCard = ({app}) => {
             <div className="card-actions justify-between">
               <div className="badge badge-soft badge-accent font-semibold">
                 <img className="w-4" src={download} alt="" />
-                {downloads}
+                {formattedDownloads}
               </div>
               <div className="badge badge-soft badge-error font-semibold">
                 <img className="w-4" src={star} alt="" />

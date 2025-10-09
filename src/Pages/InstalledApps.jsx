@@ -3,12 +3,13 @@ import React, { useEffect, useState } from "react";
 import star from "../assets/icon-ratings.png";
 import download from "../assets/icon-downloads.png";
 import LoadSpinner from "../Components/LoadSpinner";
+import { toast } from "react-toastify";
 
 const InstalledApps = () => {
   const [installList, setInstallList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
-  const sortedItem = () => {
+  const sortedItem = (() => {
     if (sortOrder === "down-asc") {
       return [...installList].sort((a, b) => a.downloads - b.downloads);
     } else if (sortOrder === "down-desc") {
@@ -16,12 +17,20 @@ const InstalledApps = () => {
     } else {
       return installList;
     }
-  };
+  })();
 
   useEffect(() => {
     const installedApp = JSON.parse(localStorage.getItem("installs"));
     if (installedApp) setInstallList(installedApp);
   }, []);
+
+  const handleUninstall = (id) => {
+    const isExist = JSON.parse(localStorage.getItem("installs"));
+    let updateList = isExist.filter((a) => a.id !== id);
+    setInstallList(updateList);
+    localStorage.setItem("installs", JSON.stringify(updateList));
+    toast.warning("Uninstalled Successfully");
+  };
 
   return (
     <div className="bg-[#F5F5F5]">
@@ -34,10 +43,14 @@ const InstalledApps = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
-        <div>
+        
+{!sortedItem.length ? (
+            <h1 className="font-bold text-5xl opacity-10 text-center my-78">No App Found</h1>
+          ) :
+        (<div>
           <div className="flex justify-between items-center mb-5">
             <h2 className="font-semibold text-2xl">
-              ({sortedItem().length})Apps Found
+              ({sortedItem.length})Apps Found
             </h2>
             <div
               value={sortOrder}
@@ -53,7 +66,7 @@ const InstalledApps = () => {
               >
                 <li>
                   <button
-                    onClick={() => setSortOrder("down-desc")}
+                    onClick={() => setSortOrder("down-asc")}
                     className="flex justify-center"
                   >
                     High <MoveRight />
@@ -63,7 +76,7 @@ const InstalledApps = () => {
                 <li>
                   <button
                     className="flex justify-center"
-                    onClick={() => setSortOrder("down-asc")}
+                    onClick={() => setSortOrder("down-desc")}
                   >
                     Low <MoveLeft />
                     High
@@ -73,9 +86,9 @@ const InstalledApps = () => {
             </div>
           </div>
 
-          {
+           
             <div className="space-y-5">
-              {sortedItem().map((p) => (
+              {sortedItem.map((p) => (
                 <div
                   key={p.id}
                   className="card card-side bg-base-100 shadow p-4 lg:flex-row flex flex-col items-center lg:items-stretch justify-between"
@@ -108,7 +121,7 @@ const InstalledApps = () => {
                     </div>
 
                     <button
-                      onClick={() => handleRemove(p.id)}
+                      onClick={() => handleUninstall(p.id)}
                       className="btn btn-success text-white w-full lg:w-auto"
                     >
                       Uninstall
@@ -117,8 +130,9 @@ const InstalledApps = () => {
                 </div>
               ))}
             </div>
-          }
-        </div>
+          
+        </div>)
+        }
       </div>
     </div>
   );

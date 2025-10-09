@@ -32,18 +32,33 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to="/">
+                <NavLink
+                  to="/"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
                   <House className="w-4" /> Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/allApps">
+                <NavLink
+                  to="/allApps"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
                   <Webhook className="w-4" />
                   Apps
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/installedApps">
+                <NavLink
+                  to="/installedApps"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
                   <MonitorDown className="w-4" />
                   Installation
                 </NavLink>

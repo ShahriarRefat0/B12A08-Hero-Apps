@@ -11,6 +11,7 @@ const AllApps = () => {
   const [searchLoading, setSearchLoading] = useState(false);
   const term = search.trim().toLowerCase();
 
+  
   useEffect(() => {
     setSearchLoading(true);
     const delay = setTimeout(() => {
@@ -27,8 +28,7 @@ const AllApps = () => {
     return () => clearTimeout(delay);
   }, [term, apps]);
 
-  // if (loading) return <LoadSpinner></LoadSpinner>;
-  // if (searchLoading) return <LoadSpinner></LoadSpinner>;
+
 
   return (
     <div className="bg-[#F5F5F5]">

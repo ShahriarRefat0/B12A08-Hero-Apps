@@ -1,5 +1,5 @@
 import React from "react";
-import { RingLoader } from "react-spinners";
+import { HashLoader, MoonLoader, RingLoader } from "react-spinners";
 
 const LoadSpinner = () => {
   const override = {
@@ -10,10 +10,10 @@ const LoadSpinner = () => {
 
   return (
     <div className="flex justify-center items-center min-h-[60vh]">
-      <RingLoader
-        color="gray"
+      <MoonLoader
+        color="#f68fff"
         cssOverride={override}
-        size={150}
+        size={120}
         aria-label="Loading Spinner"
         data-testid="loader"
       />
