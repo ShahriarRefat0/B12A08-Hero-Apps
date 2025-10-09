@@ -1,23 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppCard from "./AppCard";
+import LoadSpinner from "../Components/LoadSpinner";
+import NotFund from "./NotFund";
 
 const AllApps = () => {
   const { apps, loading } = useApps();
-
-  const [search, setSearch ] = useState('')
+  const [search, setSearch] = useState("");
+  const [filteredApps, setFilteredApps] = useState(apps);
+  const [searchLoading, setSearchLoading] = useState(false);
   const term = search.trim().toLowerCase();
 
+  useEffect(() => {
+    setSearchLoading(true);
+    const delay = setTimeout(() => {
+      if (term) {
+        const result = apps.filter((app) =>
+          app.title?.toLowerCase().includes(term)
+        );
+        setFilteredApps(result);
+      }      else {
+        setFilteredApps(apps);
+      }
+      setSearchLoading(false);
+    }, 500);
+    return () => clearTimeout(delay);
+  }, [term, apps]);
 
-  const searchApp = term
-    ? apps.filter((app) => app.title.toLowerCase().includes(term))
-    : apps;
+  // if (loading) return <LoadSpinner></LoadSpinner>;
+  // if (searchLoading) return <LoadSpinner></LoadSpinner>;
 
-
-
-  
   return (
     <div className="bg-[#F5F5F5]">
+      
       <div className="w-11/12 mx-auto mt-20">
         <div className="text-center space-y-4 mb-12">
           <h1 className="md:text-5xl text-3xl font-bold">
@@ -57,13 +72,18 @@ const AllApps = () => {
             />
           </label>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-5 mb-20">
-          {searchApp.map((app) => (
-            <AppCard key={app.id} app={app}>
-              {" "}
-            </AppCard>
-          ))}
-        </div>
+
+        {loading || searchLoading ? (
+          <LoadSpinner></LoadSpinner>
+        ) : (filteredApps.length === 0 ) ? <NotFund></NotFund> : (
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-5 mb-20">
+            {filteredApps.map((app) => (
+              <AppCard key={app.id} app={app}>
+                {" "}
+              </AppCard>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

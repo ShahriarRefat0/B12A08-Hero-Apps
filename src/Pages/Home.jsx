@@ -4,6 +4,7 @@ import AppCard from "./AppCard";
 import useApps from "../Hooks/useApps";
 import Banner from "../Components/Banner";
 import HeroSection from "../Components/HeroSection";
+import LoadSpinner from "../Components/LoadSpinner";
 
 const Home = () => {
   const { apps, loading, error } = useApps();
@@ -22,13 +23,17 @@ const Home = () => {
               Explore All Trending Apps on the Market developed by us
             </p>
           </div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 w-11/12 mx-auto md:mt-10 mt-6">
-            {featuredApps.map((app) => (
-              <AppCard key={app.id} app={app}>
-                {" "}
-              </AppCard>
-            ))}
-          </div>
+          {loading ? (
+            <LoadSpinner></LoadSpinner>
+          ) : (
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 w-11/12 mx-auto md:mt-10 mt-6">
+              {featuredApps.map((app) => (
+                <AppCard key={app.id} app={app}>
+                  {" "}
+                </AppCard>
+              ))}
+            </div>
+          )}
           <div className="flex  items-center justify-center mt-7">
             <Link
               to="/allApps"

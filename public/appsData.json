@@ -6,30 +6,15 @@
     "companyName": "ZenTech Labs",
     "description": "This focus app takes the proven Pomodoro technique and makes it even more practical for modern lifestyles. Instead of just setting a timer, it builds a complete environment for deep work, minimizing distractions and maximizing concentration. Users can create custom work and break intervals, track how many sessions they complete each day, and review detailed statistics about their focus habits over time. The design is minimal and calming, reducing cognitive load so you can focus entirely on the task at hand. Notifications gently let you know when to pause and when to resume, helping you maintain a healthy rhythm between work and rest. A unique feature of this app is the integration of task lists with timers. You can assign each task to a specific Pomodoro session, making your schedule more structured. The built-in analytics show not only how much time you’ve worked but also which tasks consumed the most energy. This allows you to reflect on your efficiency and adjust your workflow accordingly. The app also includes optional background sounds such as white noise, nature sounds, or instrumental music to create a distraction-free atmosphere. For people who struggle with procrastination, the app provides motivational streaks and achievements. Completing multiple Pomodoro sessions unlocks milestones, giving a sense of accomplishment. This gamified approach makes focusing more engaging and less like a chore. Whether you’re studying for exams, coding, writing, or handling office work, the app adapts to your routine. By combining focus tracking, task management, and motivational tools, this Pomodoro app ensures that you not only work harder but also smarter. It is a personal trainer for your brain, keeping you disciplined, refreshed, and productive throughout the day.",
     "size": 120,
-    "reviews": "25K+",
+    "reviews": 3500,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 120000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 100
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 800
-      },
-      {
-        "name": "5 star",
-        "count": 2350
-      }
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2350 }
     ]
   },
   {
@@ -39,30 +24,15 @@
     "companyName": "Healthify Inc",
     "description": "FitTrack Pro is a comprehensive fitness tracker designed to help users monitor their health metrics seamlessly. From step counting and calorie tracking to heart rate monitoring, it offers a holistic approach to personal wellness. Users can set daily, weekly, and monthly fitness goals, while detailed analytics provide insights into trends and improvements over time. The app features guided workout routines, nutrition tips, and integration with wearable devices, making it easier to maintain a healthy lifestyle. The intuitive interface ensures users can quickly log meals, check progress, and receive personalized recommendations. Additionally, motivational challenges and achievements keep users engaged, turning fitness into a fun, gamified experience. Whether you’re a beginner or a professional athlete, FitTrack Pro adapts to your fitness level, offering a complete solution for long-term health management.",
     "size": 85,
-    "reviews": "25K+",
+    "reviews": 2400,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 95000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 80
-      },
-      {
-        "name": "2 star",
-        "count": 60
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 1360
-      }
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1360 }
     ]
   },
   {
@@ -72,30 +42,15 @@
     "companyName": "FinancePro LLC",
     "description": "BudgetWise is a powerful personal finance app that allows users to take control of their money effortlessly. It provides tools for budgeting, tracking expenses, and analyzing spending habits. Users can create custom categories, set monthly limits, and receive notifications to prevent overspending. Detailed reports and charts visualize income and expenses, helping users identify areas for improvement. BudgetWise also supports goal-setting for savings and investments, offering tips for smarter financial decisions. The app integrates with bank accounts securely, automating transaction tracking and ensuring accurate data. For those who struggle with financial planning, it includes interactive tutorials, gamified milestones, and reminders to develop consistent money management habits. Whether you’re managing household expenses, planning a vacation, or saving for a big purchase, BudgetWise makes it simple and engaging.",
     "size": 75,
-    "reviews": "25K+",
+    "reviews": 1800,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 85000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 70
-      },
-      {
-        "name": "3 star",
-        "count": 150
-      },
-      {
-        "name": "4 star",
-        "count": 500
-      },
-      {
-        "name": "5 star",
-        "count": 1030
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1030 }
     ]
   },
   {
@@ -105,30 +60,15 @@
     "companyName": "EduWorld",
     "description": "LearnLang is a language learning app that transforms the way users acquire new languages. Using interactive lessons, real-world dialogues, and AI-powered pronunciation feedback, it helps learners develop listening, speaking, reading, and writing skills effectively. Users can choose from multiple languages and customize their learning paths based on proficiency levels. Daily challenges, quizzes, and streak tracking motivate continuous learning, while gamified elements make practicing fun. The app also features spaced repetition for vocabulary retention, conversation practice with native speakers, and cultural tips for immersive learning. With LearnLang, mastering a language becomes engaging, structured, and achievable for users of all ages.",
     "size": 95,
-    "reviews": "25K+",
+    "reviews": 2100,
     "ratingAvg": 4.8,
-    "downloads": "10M+",
+    "downloads": 110000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 60
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 160
-      },
-      {
-        "name": "4 star",
-        "count": 600
-      },
-      {
-        "name": "5 star",
-        "count": 1340
-      }
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1340 }
     ]
   },
   {
@@ -138,30 +78,15 @@
     "companyName": "CreativeSoft",
     "description": "PhotoFusion is an advanced photo editing app designed for both beginners and professionals. It offers a wide array of tools including filters, layers, masks, and AI-powered enhancements. Users can remove backgrounds, adjust lighting, correct colors, and create stunning compositions with ease. The app supports high-resolution exports and integrates with social media platforms for instant sharing. Tutorials and templates help users learn creative techniques while saving time. PhotoFusion also includes batch editing features, allowing users to process multiple images simultaneously. Whether you want to enhance personal photos or create professional graphics, this app provides the flexibility, creativity, and precision needed for high-quality visual content.",
     "size": 150,
-    "reviews": "25K+",
+    "reviews": 3200,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 130000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 120
-      },
-      {
-        "name": "2 star",
-        "count": 80
-      },
-      {
-        "name": "3 star",
-        "count": 400
-      },
-      {
-        "name": "4 star",
-        "count": 900
-      },
-      {
-        "name": "5 star",
-        "count": 1700
-      }
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1700 }
     ]
   },
   {
@@ -171,30 +96,15 @@
     "companyName": "Calmify",
     "description": "MindRelax is a meditation and mindfulness app designed to reduce stress and improve mental clarity. It features guided meditation sessions, breathing exercises, sleep stories, and calming background sounds. Users can track their meditation streaks and monitor their mental wellness over time. The app offers programs tailored for stress relief, focus enhancement, and better sleep. MindRelax also integrates mood tracking, journaling, and mindfulness reminders to help users maintain consistent habits. The design is soothing, encouraging users to engage regularly without feeling overwhelmed. Whether you’re a beginner or an experienced meditator, MindRelax provides a structured yet flexible approach to improving mental health and emotional resilience.",
     "size": 60,
-    "reviews": "25K+",
+    "reviews": 1500,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 70000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 180
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 830
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 830 }
     ]
   },
   {
@@ -204,30 +114,15 @@
     "companyName": "CookEase",
     "description": "RecipeMaster is a comprehensive cooking app for food enthusiasts of all levels. It offers thousands of recipes from around the world with step-by-step instructions, ingredient lists, and video tutorials. Users can create meal plans, save favorite recipes, and generate shopping lists automatically. The app adapts recipes based on dietary preferences, serving sizes, and available ingredients. With features like cooking timers, instructional tips, and community sharing, RecipeMaster makes cooking enjoyable and educational. Users can also participate in challenges, share creations, and gain inspiration from other home chefs, making it a complete platform for culinary exploration.",
     "size": 140,
-    "reviews": "25K+",
+    "reviews": 2600,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 95000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 70
-      },
-      {
-        "name": "2 star",
-        "count": 60
-      },
-      {
-        "name": "3 star",
-        "count": 300
-      },
-      {
-        "name": "4 star",
-        "count": 800
-      },
-      {
-        "name": "5 star",
-        "count": 1370
-      }
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1370 }
     ]
   },
   {
@@ -237,30 +132,15 @@
     "companyName": "Wanderlust Inc",
     "description": "TravelBuddy is a travel planning app that helps users organize trips effortlessly. It provides itinerary creation, destination suggestions, budget planning, and real-time maps. Users can save favorite places, track expenses, and receive alerts for flight changes or local events. The app also includes travel guides, packing lists, and community recommendations. Interactive features like travel journals and photo sharing allow users to document and share experiences. TravelBuddy is perfect for both casual travelers and adventure enthusiasts, simplifying the process of planning, navigating, and enjoying trips around the world.",
     "size": 110,
-    "reviews": "25K+",
+    "reviews": 1900,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 80000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 60
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 250
-      },
-      {
-        "name": "4 star",
-        "count": 600
-      },
-      {
-        "name": "5 star",
-        "count": 940
-      }
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 940 }
     ]
   },
   {
@@ -270,30 +150,15 @@
     "companyName": "SoundWave Studios",
     "description": "MusicFlow is a music streaming and discovery app offering curated playlists, radio stations, and on-demand songs. Users can explore genres, create custom playlists, and follow artists for the latest releases. The app includes offline playback, high-quality audio streaming, and personalized recommendations powered by AI. MusicFlow also offers social sharing, collaborative playlists, and live sessions with artists, making music listening interactive and enjoyable. Whether for relaxation, workouts, or parties, MusicFlow provides a complete platform for music lovers to discover and enjoy songs effortlessly.",
     "size": 130,
-    "reviews": "25K+",
+    "reviews": 2800,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 125000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 90
-      },
-      {
-        "name": "2 star",
-        "count": 70
-      },
-      {
-        "name": "3 star",
-        "count": 300
-      },
-      {
-        "name": "4 star",
-        "count": 800
-      },
-      {
-        "name": "5 star",
-        "count": 1540
-      }
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1540 }
     ]
   },
   {
@@ -303,30 +168,15 @@
     "companyName": "MindSpace",
     "description": "DailyJournal is a digital journaling app that encourages users to reflect on their day, track moods, and cultivate gratitude. It features customizable prompts, habit tracking, and secure cloud storage. Users can add text, images, or voice notes, and the app provides analytics on mood trends and journaling consistency. With reminders and motivational quotes, DailyJournal helps users build a mindful daily routine. Its clean, minimal design ensures distraction-free writing and personal reflection. Whether for mental wellness, self-growth, or creative expression, DailyJournal is a flexible companion for personal development.",
     "size": 50,
-    "reviews": "25K+",
+    "reviews": 1200,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 60000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 40
-      },
-      {
-        "name": "2 star",
-        "count": 30
-      },
-      {
-        "name": "3 star",
-        "count": 150
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 580
-      }
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 580 }
     ]
   },
   {
@@ -336,30 +186,15 @@
     "companyName": "RestTech",
     "description": "SleepWell is a sleep tracking and relaxation app that helps users improve their sleep quality. It provides sleep cycle analysis, smart alarms, soothing sounds, bedtime routines, and relaxation techniques. Users can log sleep patterns and receive personalized insights to optimize rest. The app integrates meditation exercises, white noise, and breathing routines for better sleep. SleepWell encourages healthy sleep habits and helps users understand factors affecting rest, making it a holistic solution for better sleep and overall well-being.",
     "size": 65,
-    "reviews": "25K+",
+    "reviews": 1500,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 72000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 500
-      },
-      {
-        "name": "5 star",
-        "count": 710
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 710 }
     ]
   },
   {
@@ -369,30 +204,15 @@
     "companyName": "CreativeHub",
     "description": "ArtSpace is an art creation and learning app where users can explore drawing, painting, and digital art techniques. It provides tutorials, brushes, layers, and AI-assisted suggestions. Users can create artwork, join challenges, and share creations in a vibrant community. ArtSpace encourages skill development and creativity while offering a flexible and intuitive interface. Gamified achievements and progress tracking keep users motivated, making art practice fun and engaging for beginners and professionals alike.",
     "size": 145,
-    "reviews": "25K+",
+    "reviews": 2200,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 102000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 70
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 300
-      },
-      {
-        "name": "4 star",
-        "count": 800
-      },
-      {
-        "name": "5 star",
-        "count": 980
-      }
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 980 }
     ]
   },
   {
@@ -402,30 +222,15 @@
     "companyName": "InfoStream",
     "description": "NewsFlash is a news aggregation app delivering personalized news from multiple sources in real-time. Users can select topics of interest, save articles for later, and receive breaking news alerts. The app includes features like offline reading, text-to-speech, and interactive media content. With AI-powered recommendations, NewsFlash ensures that users stay informed efficiently. Its clean and intuitive interface reduces clutter and helps focus on essential stories, making it perfect for busy readers seeking quick, accurate news updates.",
     "size": 80,
-    "reviews": "25K+",
+    "reviews": 1700,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 85000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 60
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 500
-      },
-      {
-        "name": "5 star",
-        "count": 890
-      }
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 890 }
     ]
   },
   {
@@ -435,30 +240,15 @@
     "companyName": "DevTools Co",
     "description": "CodeBuddy is an interactive coding and learning platform for developers of all levels. It offers tutorials, code challenges, syntax highlighting, and AI-assisted suggestions. Users can practice programming languages, work on projects, and receive instant feedback. The app features gamified challenges, achievement tracking, and collaborative coding options. CodeBuddy also includes a built-in code editor and supports multiple programming environments. Whether learning from scratch or enhancing professional skills, CodeBuddy makes coding accessible, structured, and fun.",
     "size": 110,
-    "reviews": "25K+",
+    "reviews": 2000,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 95000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 60
-      },
-      {
-        "name": "3 star",
-        "count": 250
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 940
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 940 }
     ]
   },
   {
@@ -468,30 +258,15 @@
     "companyName": "RetailPro",
     "description": "ShopEasy is a shopping and deals app offering a wide range of products with personalized recommendations. Users can browse categories, compare prices, and save favorite items. The app includes secure payments, order tracking, and notifications for deals and discounts. ShopEasy also features wishlists, reviews, and AI-driven suggestions for a smarter shopping experience. Whether buying daily essentials or luxury items, ShopEasy simplifies shopping with convenience and efficiency.",
     "size": 90,
-    "reviews": "25K+",
+    "reviews": 2100,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 110000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 70
-      },
-      {
-        "name": "2 star",
-        "count": 60
-      },
-      {
-        "name": "3 star",
-        "count": 300
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 970
-      }
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 970 }
     ]
   },
   {
@@ -501,30 +276,15 @@
     "companyName": "ClimateTech",
     "description": "WeatherNow provides accurate, real-time weather updates and forecasts for users worldwide. It includes hourly, daily, and weekly forecasts, severe weather alerts, radar maps, and interactive visuals. Users can customize notifications, track multiple locations, and access weather news. The app's clean interface and AI-powered predictions help users plan their day effectively. WeatherNow is ideal for outdoor enthusiasts, travelers, and anyone who wants reliable weather insights at a glance.",
     "size": 60,
-    "reviews": "25K+",
+    "reviews": 1600,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 78000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 40
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 180
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 930
-      }
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 930 }
     ]
   },
   {
@@ -534,30 +294,15 @@
     "companyName": "WellnessCo",
     "description": "YogaFlow is a yoga and wellness app designed to help users improve flexibility, strength, and mental clarity. It offers guided sessions, posture instructions, breathing exercises, and meditation routines. Users can create personalized routines, track progress, and receive reminders to maintain consistency. YogaFlow includes programs for beginners, intermediate, and advanced levels. Its clean design and instructional videos make practicing yoga engaging and safe. The app promotes holistic wellness and mindfulness through daily practice.",
     "size": 95,
-    "reviews": "25K+",
+    "reviews": 1500,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 85000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 30
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 150
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 880
-      }
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 880 }
     ]
   },
   {
@@ -567,30 +312,15 @@
     "companyName": "BrainTools",
     "description": "MindMap Pro helps users organize ideas visually using mind maps, flowcharts, and diagrams. It supports collaboration, project planning, and brainstorming. Users can attach files, add notes, and use color-coded nodes for clarity. MindMap Pro enhances creativity and productivity by providing an intuitive, interactive workspace. Templates and AI-assisted suggestions speed up idea generation, making it suitable for students, professionals, and teams.",
     "size": 120,
-    "reviews": "25K+",
+    "reviews": 1700,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 80000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 500
-      },
-      {
-        "name": "5 star",
-        "count": 910
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 910 }
     ]
   },
   {
@@ -600,30 +330,15 @@
     "companyName": "OrganizeIt",
     "description": "EventPlanner is an app for organizing personal and professional events seamlessly. It offers calendar integration, task management, budget tracking, guest invitations, RSVPs, and reminders. Users can collaborate with team members, track deadlines, and generate schedules. The app simplifies planning for weddings, parties, conferences, and corporate events. Notifications and analytics ensure everything runs smoothly. EventPlanner combines practicality and creativity, making event management stress-free and efficient.",
     "size": 100,
-    "reviews": "25K+",
+    "reviews": 1300,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 70000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 40
-      },
-      {
-        "name": "2 star",
-        "count": 30
-      },
-      {
-        "name": "3 star",
-        "count": 150
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 680
-      }
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 680 }
     ]
   },
   {
@@ -633,30 +348,15 @@
     "companyName": "FinanceHub",
     "description": "StockWatcher is an investment tracking and stock market analysis app. It provides real-time quotes, news, portfolio tracking, and market insights. Users can create watchlists, set alerts, and follow companies. Interactive charts and analytics help in making informed investment decisions. StockWatcher is ideal for beginners and professionals, offering tools to monitor and optimize financial growth.",
     "size": 110,
-    "reviews": "25K+",
+    "reviews": 2000,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 95000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 60
-      },
-      {
-        "name": "3 star",
-        "count": 250
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 940
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 940 }
     ]
   },
   {
@@ -666,30 +366,15 @@
     "companyName": "AnimalSoft",
     "description": "PetCare is a pet management app designed for pet owners to track health, appointments, diet, and activities. It provides reminders for vaccinations, medication, grooming, and vet visits. Users can log daily activities and monitor pet growth. PetCare also offers training tips and community support for pet lovers. The app ensures pets remain healthy and well-cared for with organized tracking and guidance.",
     "size": 80,
-    "reviews": "25K+",
+    "reviews": 1400,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 78000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 40
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 710
-      }
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 710 }
     ]
   },
   {
@@ -699,30 +384,15 @@
     "companyName": "ShopSmart",
     "description": "GroceryPal helps users manage grocery shopping efficiently. It offers smart shopping lists, pantry inventory, price comparisons, and recipe suggestions. Users can plan meals, track purchases, and receive reminders for restocking. The app integrates with local stores for delivery or pickup, making grocery shopping convenient and cost-effective.",
     "size": 90,
-    "reviews": "25K+",
+    "reviews": 1600,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 80000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 40
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 180
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 940
-      }
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 940 }
     ]
   },
   {
@@ -732,30 +402,15 @@
     "companyName": "SnapMedia",
     "description": "PhotoStory is a creative storytelling app that lets users combine photos, videos, and music to make interactive stories. Users can add text, effects, and voiceovers to create personalized memories or professional presentations. The app features templates, collaboration, and social sharing options. PhotoStory encourages creativity, making it easy to produce polished content with minimal effort.",
     "size": 140,
-    "reviews": "25K+",
+    "reviews": 2000,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 105000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 60
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 300
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 890
-      }
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 890 }
     ]
   },
   {
@@ -765,30 +420,15 @@
     "companyName": "Polyglot Inc",
     "description": "LanguageHub offers comprehensive courses for multiple languages, combining grammar lessons, vocabulary drills, speaking practice, and interactive quizzes. Users can learn at their own pace and track progress over time. The app provides real-life scenarios, AI conversation partners, and gamified achievements to enhance engagement. LanguageHub ensures effective and enjoyable learning for beginners and advanced learners.",
     "size": 100,
-    "reviews": "25K+",
+    "reviews": 1800,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 90000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 200
-      },
-      {
-        "name": "4 star",
-        "count": 500
-      },
-      {
-        "name": "5 star",
-        "count": 1010
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1010 }
     ]
   },
   {
@@ -798,30 +438,15 @@
     "companyName": "ProductiveApps",
     "description": "TaskManager Pro helps users organize tasks, projects, and deadlines efficiently. It includes task lists, priorities, reminders, calendar integration, and collaboration tools. Users can track progress, visualize timelines, and receive notifications. The app supports recurring tasks, subtasks, and project templates. TaskManager Pro is perfect for individuals and teams looking to enhance productivity, plan workloads, and meet deadlines with ease.",
     "size": 85,
-    "reviews": "25K+",
+    "reviews": 1700,
     "ratingAvg": 4.5,
-    "downloads": "10M+",
+    "downloads": 82000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 40
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 180
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 1040
-      }
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1040 }
     ]
   },
   {
@@ -831,30 +456,15 @@
     "companyName": "CalmLife",
     "description": "MeditateNow offers guided meditations, breathing exercises, and mindfulness programs for stress reduction and mental clarity. Users can track meditation streaks, mood changes, and sleep quality. The app provides a variety of themes, background sounds, and personalized meditation plans. MeditateNow encourages daily practice, offering reminders, achievements, and progress analytics. Suitable for beginners and experienced practitioners, it promotes relaxation, focus, and emotional balance.",
     "size": 70,
-    "reviews": "25K+",
+    "reviews": 1400,
     "ratingAvg": 4.6,
-    "downloads": "10M+",
+    "downloads": 75000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 30
-      },
-      {
-        "name": "2 star",
-        "count": 40
-      },
-      {
-        "name": "3 star",
-        "count": 150
-      },
-      {
-        "name": "4 star",
-        "count": 400
-      },
-      {
-        "name": "5 star",
-        "count": 780
-      }
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 780 }
     ]
   },
   {
@@ -864,30 +474,15 @@
     "companyName": "FoodTech",
     "description": "RecipeBox is a cooking and recipe management app, allowing users to discover, save, and organize recipes. It offers step-by-step instructions, videos, and ingredient lists. Users can create meal plans, generate shopping lists, and share recipes with the community. RecipeBox adapts to dietary preferences, serving sizes, and seasonal ingredients. Gamified cooking challenges and achievements keep users engaged and inspired to explore new culinary skills.",
     "size": 130,
-    "reviews": "25K+",
+    "reviews": 1900,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 98000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 60
-      },
-      {
-        "name": "2 star",
-        "count": 50
-      },
-      {
-        "name": "3 star",
-        "count": 250
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 840
-      }
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 840 }
     ]
   },
   {
@@ -897,30 +492,15 @@
     "companyName": "FitTech",
     "description": "WorkoutPal is a personal fitness companion offering guided workouts, exercise routines, progress tracking, and personalized fitness plans. Users can follow strength training, cardio, HIIT, and flexibility programs. The app provides instructional videos, performance analytics, and motivational challenges to ensure consistent engagement. WorkoutPal adapts plans based on fitness level and goals. Whether aiming to lose weight, gain strength, or improve endurance, the app supports users in achieving fitness milestones effectively and safely.",
     "size": 120,
-    "reviews": "25K+",
+    "reviews": 2000,
     "ratingAvg": 4.7,
-    "downloads": "10M+",
+    "downloads": 1000,
     "ratings": [
-      {
-        "name": "1 star",
-        "count": 50
-      },
-      {
-        "name": "2 star",
-        "count": 60
-      },
-      {
-        "name": "3 star",
-        "count": 250
-      },
-      {
-        "name": "4 star",
-        "count": 700
-      },
-      {
-        "name": "5 star",
-        "count": 940
-      }
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 940 }
     ]
   }
 ]

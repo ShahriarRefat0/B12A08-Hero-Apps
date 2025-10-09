@@ -4,7 +4,6 @@ import star from "../assets/icon-ratings.png";
 import download from "../assets/icon-downloads.png";
 import like from "../assets/icon-review.png";
 import {
-  BarChart,
   Bar,
   CartesianGrid,
   XAxis,
@@ -16,12 +15,16 @@ import {
   Area,
   Line,
 } from "recharts";
+import LoadSpinner from "../Components/LoadSpinner";
+import { useState } from "react";
 
 const AppDetails = () => {
+  const [installs, setInstalls] = useState([])
   const params = useParams();
   const { apps, loading, error } = useApps();
   const app = apps.find((app) => app.id === Number(params.id));
-
+  if (loading) {return <LoadSpinner></LoadSpinner>}
+  
   const {
     image,
     title,
@@ -33,6 +36,26 @@ const AppDetails = () => {
     description,
     ratings = [],
   } = app || {};
+
+
+  const handleInstall = () => {
+    const isExist = JSON.parse(localStorage.getItem('installs'))
+    let updateList = []
+    if (isExist) {
+      const allReadyInstalled = isExist.some((a) => a.id === app.id) 
+      if (allReadyInstalled) {
+        return alert('no vai')
+      } 
+      updateList = [...isExist, app];
+    } else {
+      updateList.push(app)
+    }
+     localStorage.setItem("installs", JSON.stringify(updateList));
+    
+  };
+
+
+
 
   return (
     <div className="bg-[#F5F5F5]">
@@ -82,7 +105,7 @@ const AppDetails = () => {
                   </h2>
                 </div>
               </div>
-              <button className="btn btn-success text-white font-bold md:w-[240px] w-full">
+              <button onClick={handleInstall} className="btn btn-success text-white font-bold md:w-[240px] w-full">
                 Install Now ({size} MB)
               </button>
             </div>
@@ -103,8 +126,7 @@ const AppDetails = () => {
                   bottom: 20,
                   left: 20,
                 }}
-                barCategoryGap="10%" // 🟢 bar group gap কমানো
-                barGap={20}
+                
               >
                 <CartesianGrid stroke="#f5f5f5" />
                 <XAxis axisLine={false} tickLine={false} type="number" />
