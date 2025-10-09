@@ -16,18 +16,30 @@ import {
   Line,
 } from "recharts";
 import LoadSpinner from "../Components/LoadSpinner";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { abbreviateNumber } from "js-abbreviation-number";
 import { toast } from "react-toastify";
 
 const AppDetails = () => {
-  const [isInstalled, setIsInstalled] = useState(false)
+  const [isInstalled, setIsInstalled] = useState(false);
   const params = useParams();
-  const { apps, loading, error } = useApps();
+  const { apps, loading } = useApps();
 
-  const app = apps.find((app) => app.id === Number(params.id));
-  if (loading) {return <LoadSpinner></LoadSpinner>}
+  useEffect(() => {
+    const isExist = JSON.parse(localStorage.getItem("installs")) || [];
+
+    const alreadyInstalled = isExist.filter((a) => a.p === Number(params.id))
+    if (alreadyInstalled) {
+      setIsInstalled(true)
+    }
+
+  }, [params.id]);
   
+  const app = apps.find((app) => app.id === Number(params.id));
+  if (loading) {
+    return <LoadSpinner></LoadSpinner>;
+  }
+
   const {
     image,
     title,
@@ -38,34 +50,28 @@ const AppDetails = () => {
     companyName,
     description,
     ratings,
-    id
-    
   } = app || {};
 
   const formattedDownloads = abbreviateNumber(downloads);
   const formattedReviews = abbreviateNumber(reviews);
 
-  
   const handleInstall = () => {
     if (isInstalled) return;
-    const isExist = JSON.parse(localStorage.getItem('installs'))
-    let updateList = []
+    const isExist = JSON.parse(localStorage.getItem("installs"));
+    let updateList = [];
     if (isExist) {
-      const allReadyInstalled = isExist.some((a) => a.id === app.id) 
+      const allReadyInstalled = isExist.some((a) => a.id === app.id);
       if (allReadyInstalled) {
-        return 
-      } 
+        return;
+      }
       updateList = [...isExist, app];
     } else {
-      updateList.push(app)
+      updateList.push(app);
     }
-     localStorage.setItem("installs", JSON.stringify(updateList));
+    localStorage.setItem("installs", JSON.stringify(updateList));
     setIsInstalled(true);
-    toast.success(`${title} app installed successfully`)
+    toast.success(`${title} app installed successfully`);
   };
-
-
-
 
   return (
     <div className="bg-[#F5F5F5]">
@@ -75,7 +81,7 @@ const AppDetails = () => {
           <div className="flex items-center gap-10 p-5 md:flex-row flex-col ">
             <img className="md:w-[350px] w-[200px]" src={image} alt="" />
             <div className="flex justify-between flex-col">
-              <div className="border-b-1 border-b-gray-300 w-full pb-7">
+              <div className="border-b-1 border-b-gray-300 pb-7">
                 <h3 className="md:text-[32px] text-[25px] font-bold ">
                   {title}
                 </h3>
@@ -122,7 +128,7 @@ const AppDetails = () => {
                 } text-white font-bold md:w-[240px] w-full`}
                 disabled={isInstalled}
               >
-                {isInstalled ? "Installed" : `Install Now ${size} MB` }
+                {isInstalled ? "Installed" : `Install Now ${size} MB`}
               </button>
             </div>
           </div>
