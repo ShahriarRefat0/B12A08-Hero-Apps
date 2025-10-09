@@ -72,7 +72,7 @@ const AppDetails = () => {
       <div className="w-11/12 mx-auto flex flex-col">
         <div>
           {/* //download info */}
-          <div className="flex  items-center gap-10 p-5 md:flex-row flex-col">
+          <div className="flex items-center gap-10 p-5 md:flex-row flex-col ">
             <img className="md:w-[350px] w-[200px]" src={image} alt="" />
             <div className="flex justify-between flex-col">
               <div className="border-b-1 border-b-gray-300 w-full pb-7">

@@ -66,7 +66,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost ">
-            <img className="md:w-10 w-7" src="../src/assets/logo.png" alt="" />
+            <img className="md:w-10 w-7" src="/logo.png" alt="" />
             <p className="font-bold text-transparent bg-clip-text bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]">
               HERO.IO
             </p>
