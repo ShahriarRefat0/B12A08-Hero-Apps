@@ -5,7 +5,9 @@ import download from "../assets/icon-downloads.png";
 import LoadSpinner from "../Components/LoadSpinner";
 import { toast } from "react-toastify";
 
+
 const InstalledApps = () => {
+  const [loading, setLoading] = useState(false)
   const [installList, setInstallList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
@@ -20,8 +22,14 @@ const InstalledApps = () => {
   })();
 
   useEffect(() => {
-    const installedApp = JSON.parse(localStorage.getItem("installs"));
-    if (installedApp) setInstallList(installedApp);
+    setLoading(true);
+    const timer = setTimeout(() => {
+      
+      const installedApp = JSON.parse(localStorage.getItem("installs"));
+      if (installedApp) setInstallList(installedApp);
+      setLoading(false)
+    }, 400)
+    return ()=> clearTimeout(timer)
   }, []);
 
   const handleUninstall = (id) => {
@@ -43,50 +51,58 @@ const InstalledApps = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
-        
-{!sortedItem.length ? (
-            <h1 className="font-bold text-5xl opacity-10 text-center my-78">No App Found</h1>
-          ) :
-        (<div>
-          <div className="flex justify-between items-center mb-5">
-            <h2 className="font-semibold text-2xl">
-              ({sortedItem.length})Apps Found
-            </h2>
-            <div
-              value={sortOrder}
-              onChange={(e) => setSortOrder(e.target.value)}
-              className="dropdown dropdown-bottom dropdown-end"
-            >
-              <div value="none" tabIndex={0} role="button" className="btn m-1">
-                Sort By Size <ArrowUpDown />
-              </div>
-              <ul
-                tabIndex={0}
-                className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-              >
-                <li>
-                  <button
-                    onClick={() => setSortOrder("down-asc")}
-                    className="flex justify-center"
-                  >
-                    High <MoveRight />
-                    Low
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className="flex justify-center"
-                    onClick={() => setSortOrder("down-desc")}
-                  >
-                    Low <MoveLeft />
-                    High
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
 
-           
+        {loading ? (
+          <LoadSpinner></LoadSpinner>
+        ) : !sortedItem.length ? (
+          <h1 className="font-bold text-5xl opacity-10 text-center my-78">
+            No App Found
+          </h1>
+        ) : (
+          <div>
+            <div className="flex justify-between items-center mb-5">
+              <h2 className="font-semibold text-2xl">
+                ({sortedItem.length})Apps Found
+              </h2>
+              <div
+                value={sortOrder}
+                onChange={(e) => setSortOrder(e.target.value)}
+                className="dropdown dropdown-bottom dropdown-end"
+              >
+                <div
+                  value="none"
+                  tabIndex={0}
+                  role="button"
+                  className="btn m-1"
+                >
+                  Sort By Size <ArrowUpDown />
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <button
+                      onClick={() => setSortOrder("down-asc")}
+                      className="flex justify-center"
+                    >
+                      High <MoveRight />
+                      Low
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="flex justify-center"
+                      onClick={() => setSortOrder("down-desc")}
+                    >
+                      Low <MoveLeft />
+                      High
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <div className="space-y-5">
               {sortedItem.map((p) => (
                 <div
@@ -130,9 +146,8 @@ const InstalledApps = () => {
                 </div>
               ))}
             </div>
-          
-        </div>)
-        }
+          </div>
+        )}
       </div>
     </div>
   );
