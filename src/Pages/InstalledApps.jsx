@@ -4,6 +4,7 @@ import star from "../assets/icon-ratings.png";
 import download from "../assets/icon-downloads.png";
 import LoadSpinner from "../Components/LoadSpinner";
 import { toast } from "react-toastify";
+import { abbreviateNumber } from "js-abbreviation-number";
 
 
 const InstalledApps = () => {
@@ -20,6 +21,8 @@ const InstalledApps = () => {
       return installList;
     }
   })();
+
+  console.log(sortedItem);
 
   useEffect(() => {
     setLoading(true);
@@ -55,7 +58,7 @@ const InstalledApps = () => {
         {loading ? (
           <LoadSpinner></LoadSpinner>
         ) : !sortedItem.length ? (
-          <h1 className="font-bold text-5xl opacity-10 text-center my-78">
+          <h1 className="font-bold text-5xl opacity-10 text-center md:mt-40 mt-30">
             No App Found
           </h1>
         ) : (
@@ -124,7 +127,7 @@ const InstalledApps = () => {
                       <div className="flex flex-row gap-3">
                         <div className="badge badge-soft badge-accent font-semibold">
                           <img className="w-4" src={download} alt="" />
-                          {p.downloads}
+                          { abbreviateNumber( p.downloads)}
                         </div>
                         <div className="badge badge-soft badge-error font-semibold">
                           <img className="w-4" src={star} alt="" />
