@@ -40,16 +40,16 @@ Built with **React Router**, **Recharts**, and **TailwindCSS**, this project dem
 
 ## 🏗️ Project Structure
 
-src/
-├── assets/ # Images and icons
-├── Components/ # Reusable UI components
-├── Hooks/ # Custom hooks (e.g. useApps)
-├── Layouts/ # Layout components (e.g. MainLayout)
-├── Pages/ # Route-based pages (Home, AllApps, InstalledApps, etc.)
-├── App.jsx # Main application entry
-└── main.jsx # Vite entry point
-public/
-└── logo.png
+src/  
+├── assets/ # Images and icons  
+├── Components/ # Reusable UI components  
+├── Hooks/ # Custom hooks (e.g. useApps)  
+├── Layouts/ # Layout components (e.g. MainLayout)  
+├── Pages/ # Route-based pages (Home, AllApps, InstalledApps, etc.)  
+├── App.jsx # Main application entry  
+└── main.jsx # Vite entry point  
+public/  
+└── logo.png  
 
 ---  
 
