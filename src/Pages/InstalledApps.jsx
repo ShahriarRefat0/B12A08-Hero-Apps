@@ -1,4 +1,4 @@
-import { ArrowUpDown, MoveLeft, MoveRight } from "lucide-react";
+import { ArrowUpDown, MoveRight } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import star from "../assets/icon-ratings.png";
 import download from "../assets/icon-downloads.png";
@@ -14,9 +14,10 @@ const InstalledApps = () => {
 
   const sortedItem = (() => {
     if (sortOrder === "down-asc") {
-      return [...installList].sort((a, b) => a.downloads - b.downloads);
+            return [...installList].sort((a, b) => b.downloads - a.downloads);
     } else if (sortOrder === "down-desc") {
-      return [...installList].sort((a, b) => b.downloads - a.downloads);
+
+      return [...installList].sort((a, b) => a.downloads - b.downloads);
     } else {
       return installList;
     }
@@ -78,7 +79,7 @@ const InstalledApps = () => {
                   role="button"
                   className="btn m-1"
                 >
-                  Sort By Size <ArrowUpDown />
+                  Sort By Download <ArrowUpDown />
                 </div>
                 <ul
                   tabIndex={0}
@@ -98,7 +99,7 @@ const InstalledApps = () => {
                       className="flex justify-center"
                       onClick={() => setSortOrder("down-desc")}
                     >
-                      Low <MoveLeft />
+                      Low <MoveRight />
                       High
                     </button>
                   </li>
@@ -127,7 +128,7 @@ const InstalledApps = () => {
                       <div className="flex flex-row gap-3">
                         <div className="badge badge-soft badge-accent font-semibold">
                           <img className="w-4" src={download} alt="" />
-                          { abbreviateNumber( p.downloads)}
+                          {abbreviateNumber(p.downloads)}
                         </div>
                         <div className="badge badge-soft badge-error font-semibold">
                           <img className="w-4" src={star} alt="" />

@@ -11,6 +11,7 @@ const NotFund = () => {
           The App you are requesting is not found on our system. please try
           another apps
         </p>
+        
       </div>
     </div>
   );
