@@ -7,7 +7,7 @@ const Footer = () => {
       <div className=" text-white w-11/12 mx-auto pt-5 px-10">
         <div className="flex justify-start items-center gap-3">
           <img className="w-8" src={logo} alt="" />
-          <p className="font-bold ">HERO.IO</p>
+          <p className="font-bold ">XIOS.IO</p>
         </div>
       </div>
       <footer className="bg-[#001931] footer sm:footer-horizontal text-white px-10 pt-5 pb-10 w-11/12 mx-auto ">
