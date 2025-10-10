@@ -28,13 +28,12 @@ const AppDetails = () => {
   useEffect(() => {
     const isExist = JSON.parse(localStorage.getItem("installs")) || [];
 
-    const alreadyInstalled = isExist.filter((a) => a.p === Number(params.id))
+    const alreadyInstalled = isExist.some((a) => a.p === Number(params.id));
     if (alreadyInstalled) {
-      setIsInstalled(true)
+      setIsInstalled(true);
     }
-
   }, [params.id]);
-  
+
   const app = apps.find((app) => app.id === Number(params.id));
   if (loading) {
     return <LoadSpinner></LoadSpinner>;

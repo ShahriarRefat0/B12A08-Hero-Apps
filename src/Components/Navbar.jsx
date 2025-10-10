@@ -5,6 +5,7 @@ import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
   
+  
   return (
     <div className="bg-base-100 shadow-sm">
       <div className="navbar w-11/12 mx-auto">
@@ -68,7 +69,7 @@ const Navbar = () => {
           <Link to="/" className="btn btn-ghost ">
             <img className="md:w-10 w-7" src="/logo.png" alt="" />
             <p className="font-bold text-transparent bg-clip-text bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]">
-              HERO.IO
+              XIOS.IO
             </p>
           </Link>
         </div>
